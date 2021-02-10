@@ -9,8 +9,8 @@ I used the .unique() attribute to find the unique years in this data set, which 
 
 I first used the .max() attribute to find the maximum value in the population column. Next I used .loc to get the rest of the information for this entry. 
 
-"' python
+```python
 max_pop = data['pop'].max()
 max_pop_idx = data.loc[data['pop'] == max_pop].index[0]
 print(data.loc[max_pop_idx])
-"'
+```
