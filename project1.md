@@ -24,3 +24,8 @@ path_to_data = '/Users/kellynmckee/Desktop/gapminder.tsv'
 df = pd.read_csv(path_to_data, sep = '\t')
 ```
 The first line sets the path to the document and the second line saves the data as a dataframe called df.
+
+Notice that an additional argument is given to the function specifying the seperation of each peice of data. This is important because the default assumption is that the data is separated by commas. If this is not the case, it should be specified to facilitate smooth import. In this dataset the data is separated by tabs instead of commas, which is indicated by the sep = '\t'.
+
+To see an overview of the data frame, use the df.describe() function. This will summarize and provide statistics for each column of data. To see how many rows and columns there are, use df.shape. This will return the number of rows followed by the number of columns. The output for the gapminder data set is (1704, 6). To see the actual names of the columns use df.columns. The rows can also be referred to as items and the columns referred to as properties.
+
