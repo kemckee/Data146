@@ -50,3 +50,16 @@ data[idx_min]
 This yielded an entry from Rwanda in 1992 with an average life expectancy of only 23.599 years. This low life expectancy was likely due to the genocide and civil war occurring in Rwanda at this time.
 
 ## Question 5
+
+I first created the gdp variable by multiplying population by gdp per capita and created a new column with this information. I created a new dataframe by subsetting the dataframe to only include entries from France, Italy, Germany, and Spain from the year 2007. I then sorted the output by gdp using sort_values.
+
+```python
+data['gdp'] = data['pop'] * data['gdpPercap']
+euro_data = data[(data['country'].isin(['Germany', 'Italy', 'France', 'Spain'])) & (data['year'] == 2007)]
+euro_sorted = euro_data.sort_values('gdp')
+```
+The results are shown in the following table. 
+
+| Country | Continent | Year | Population | GDP per Capita | GDP          |  
+| ------- | --------- | ---- | ---------- | -------------- | ------------ |
+| Spain   | Europe    | 2007 | 40448191   | 28821.06370    | 1.165760e+12
