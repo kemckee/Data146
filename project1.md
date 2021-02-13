@@ -82,3 +82,4 @@ The | operator will return true in a boolean expression if one or both of the st
 ```python
 data_gdp = data[(data['gdpPercap'] >= 2000) | (data['country'] == 'Germany')]
 ```
+The ^ operator is similar to the | operator, but it returns true in a boolean expression only when one of the statements is true. If the ^ operator is switched into the example above, the data set would be the same except it would not include values for which both country = Germany and GDP per capita is greater than or equal to 2000.
