@@ -40,4 +40,13 @@ data[idx_year]
 
 ## Question 4
 
+I used these three lines of code to get the entry with the lowest life expectancy.
 
+```python
+lifeExp_min = data['lifeExp'].min()
+idx_min = data['lifeExp'] == lifeExp_min
+data[idx_min]
+```
+This yielded an entry from Rwanda in 1992 with an average life expectancy of only 23.599 years. This low life expectancy was likely due to the genocide and civil war occurring in Rwanda at this time.
+
+## Question 5
