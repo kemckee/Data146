@@ -66,3 +66,19 @@ The results are shown in the following table.
 | France  | Europe    | 2007 | 61083916   | 30470.01670    | 1.861228e+12 |
 | Italy   | Europe    | 2007 | 58147733   | 28569.71970    | 1.661264e+12 |
 | Spain   | Europe    | 2007 | 40448191   | 28821.06370    | 1.165760e+12 |
+
+## Question 6
+
+The & symbol is used in boolean expressions and returns true only if both statements are true. For example, this expression will result in a new dataframe containing only values for which both country = Europe and year = 2007.
+
+```python
+data_europe = data[(data['continent'] == 'Europe') & (data['year'] == 2007)]
+```
+
+This expression also illustrates the == operator. This operator is used to compare the equality of two items or values. In a boolean expression it will return true if the values are the same and false if they are not. In this case it returns all values in the dataframe for which the string in the continent column is equal to Europe and the value in the year column is equal to 2007. 
+
+The | operator will return true in a boolean expression if one or both of the statements on either side of the operator is true. For example, the data frame below will contain all values from the gapminder data frame that either have a GDP per capita greater than or equal to 2000 or have Germany as the country listed. These values can overlap.
+
+```python
+data_gdp = data[(data['gdpPercap'] >= 2000) | (data['country'] == 'Germany')]
+```
