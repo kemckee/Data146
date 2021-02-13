@@ -56,10 +56,13 @@ I first created the gdp variable by multiplying population by gdp per capita and
 ```python
 data['gdp'] = data['pop'] * data['gdpPercap']
 euro_data = data[(data['country'].isin(['Germany', 'Italy', 'France', 'Spain'])) & (data['year'] == 2007)]
-euro_sorted = euro_data.sort_values('gdp')
+euro_sorted = euro_data.sort_values('gdp', ascending = False)
 ```
 The results are shown in the following table. 
 
 | Country | Continent | Year | Population | GDP per Capita | GDP          |  
 | ------- | --------- | ---- | ---------- | -------------- | ------------ |
-| Spain   | Europe    | 2007 | 40448191   | 28821.06370    | 1.165760e+12
+| Germany | Europe    | 2007 | 82400996   | 32170.37442    | 2.650871e+12 |
+| France  | Europe    | 2007 | 61083916   | 30470.01670    | 1.861228e+12 |
+| Italy   | Europe    | 2007 | 58147733   | 28569.71970    | 1.661264e+12 |
+| Spain   | Europe    | 2007 | 40448191   | 28821.06370    | 1.165760e+12 |
