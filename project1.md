@@ -29,3 +29,15 @@ Notice that an additional argument is given to the function specifying the seper
 
 To see an overview of the data frame, use the df.describe() function. This will summarize and provide statistics for each column of data. To see how many rows and columns there are, use df.shape. This will return the number of rows followed by the number of columns. The output for the gapminder data set is (1704, 6). To see the actual names of the columns use df.columns. The rows can also be referred to as items and the columns referred to as properties.
 
+## Question 3
+
+It appears that the years in the gapminder data frame run in incrememnts of 5, with 1952 being the earliest and 2007 being the most recent. To make this data set more current, the years 2012 and 2017 should be added. Using the code below (testing multiple years) I found that there are 142 items for each year, so adding 2 more years would add a total of 284 new rows.
+
+```python
+idx_year = data['year'] == 2007
+data[idx_year]
+```
+
+## Question 4
+
+
