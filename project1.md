@@ -100,3 +100,9 @@ display(data.iloc[:, 2:6])
 
 ## Question 8
 
+An API is a application programming interface. They essentially relay information between your code and the provider/website that hosts your data of interest. The API delivers your request to the provider and then sends back their response to you.
+
+
+## Question 9
+
+
