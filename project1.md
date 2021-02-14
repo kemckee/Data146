@@ -83,3 +83,20 @@ The | operator will return true in a boolean expression if one or both of the st
 data_gdp = data[(data['gdpPercap'] >= 2000) | (data['country'] == 'Germany')]
 ```
 The ^ operator is similar to the | operator, but it returns true in a boolean expression only when one of the statements is true. If the ^ operator is switched into the example above, the data set would be the same except it would not include values for which both country = Germany and GDP per capita is greater than or equal to 2000.
+
+## Question 7
+
+The .loc() is a method used for selecting data based on row or column name. This method can be used to extract consecutive values in a data frame if you know their indicies. For example, the code below would show rows 10-15 of the dataframe. The values can be changed depending on which consecutive rows are desired. 
+
+```python
+display(data.loc[10:15])
+```
+
+The .iloc() method is also used for getting particular row/column data but it relies on indices rather than column names or actual data values. This method can be used to locate consecutive columns. If all rows are desired but only some consecutive columns, use the following code, where the range in the brackets indicates which consecutive columns are shown based on their indices.
+
+```python
+display(data.iloc[:, 2:6])
+```
+
+## Question 8
+
