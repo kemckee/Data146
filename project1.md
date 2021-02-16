@@ -105,4 +105,8 @@ An API is a application programming interface. They essentially relay informatio
 
 ## Question 9
 
+Apply is a pandas method that allows a function to be applied to all rows or all columns in a dataframe. It can be used for mathematical operations, changing the types of entries, and many other applications. Apply is an alternative to using a loop to perform a function on every item in a dataframe. Apply is prefereable to using a loop because it is faster as and improves the clarity of the code. Why use a three line for loop when the same command can be accomplished faster with a one line .apply method?
+
+## Question 10
+
 
