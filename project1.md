@@ -86,13 +86,13 @@ The ^ operator is similar to the | operator, but it returns true in a boolean ex
 
 ## Question 7
 
-The .loc() is a method used for selecting data based on row or column name. This method can be used to extract consecutive values in a data frame if you know their indicies. For example, the code below would show rows 10-15 of the dataframe. The values can be changed depending on which consecutive rows are desired. 
+The .loc() is a method used for selecting data based on row name or indices. This method can be used to extract consecutive values in a data frame if you know their indicies. For example, the code below would show rows 10-15 of the dataframe. The values can be changed depending on which consecutive rows are desired. 
 
 ```python
 display(data.loc[10:15])
 ```
 
-The .iloc() method is also used for getting particular row/column data but it relies on indices rather than column names or actual data values. This method can be used to locate consecutive columns. If all rows are desired but only some consecutive columns, use the following code, where the range in the brackets indicates which consecutive columns are shown based on their indices.
+The .iloc() method is also used for getting particular row/column data but it relies only on indices rather than column names or values. This method can be used to locate consecutive columns. If all rows are desired but only some consecutive columns, use the following code, where the range in the brackets indicates which consecutive columns are shown based on their indices.
 
 ```python
 display(data.iloc[:, 2:6])
