@@ -69,7 +69,7 @@ The results are shown in the following table.
 
 ## Question 6
 
-The & symbol is used in boolean expressions and returns true only if both statements are true. For example, this expression will result in a new dataframe containing only values for which both country = Europe and year = 2007.
+The & symbol is a bit operator that sets bits to 1 only if both statements bits equal 1. For example, this expression will result in a new dataframe containing only values for which both country = Europe and year = 2007.
 
 ```python
 data_europe = data[(data['continent'] == 'Europe') & (data['year'] == 2007)]
@@ -77,19 +77,25 @@ data_europe = data[(data['continent'] == 'Europe') & (data['year'] == 2007)]
 
 This expression also illustrates the == operator. This operator is used to compare the equality of two items or values. In a boolean expression it will return true if the values are the same and false if they are not. In this case it returns all values in the dataframe for which the string in the continent column is equal to Europe and the value in the year column is equal to 2007. 
 
-The | operator will return true in a boolean expression if one or both of the statements on either side of the operator is true. For example, the data frame below will contain all values from the gapminder data frame that either have a GDP per capita greater than or equal to 2000 or have Germany as the country listed. These values can overlap.
+The | operator will set bits to 1 if one or both of the statements's bits is 1. For example, the data frame below will contain all values from the gapminder data frame that either have a GDP per capita greater than or equal to 2000 or have Germany as the country listed. These values can overlap.
 
 ```python
 data_gdp = data[(data['gdpPercap'] >= 2000) | (data['country'] == 'Germany')]
 ```
-The ^ operator is similar to the | operator, but it returns true in a boolean expression only when one of the statements is true. If the ^ operator is switched into the example above, the data set would be the same except it would not include values for which both country = Germany and GDP per capita is greater than or equal to 2000.
+The ^ operator is similar to the | operator, but it sets bits to 1 only when one of the statements' bits is 1. If the ^ operator is switched into the example above, the data set would be the same except it would not include values for which both country = Germany and GDP per capita is greater than or equal to 2000.
 
 ## Question 7
 
-The .loc() is a method used for selecting data based on row name or indices. This method can be used to extract consecutive values in a data frame if you know their indicies. For example, the code below would show rows 10-15 of the dataframe. The values can be changed depending on which consecutive rows are desired. 
+The .loc() is a method used for selecting data based on data names or indices. For example, it can be used to find all entries that have some value in common. The following code would show only data from Afghanistan.
 
 ```python
-display(data.loc[10:15])
+data.loc[data.country == 'Afghanistan']
+```
+
+This method can also be used to extract consecutive rows in a data frame if you know their indicies. For example, the code below would show rows 10-15 of the dataframe. The values can be changed depending on which consecutive rows are desired. 
+
+```python
+data.loc[10:15]
 ```
 
 The .iloc() method is also used for getting particular row/column data but it relies only on indices rather than column names or values. This method can be used to locate consecutive columns. If all rows are desired but only some consecutive columns, use the following code, where the range in the brackets indicates which consecutive columns are shown based on their indices.
