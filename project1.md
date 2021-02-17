@@ -109,4 +109,15 @@ Apply() is a pandas method that allows a function to be applied to all rows or a
 
 ## Question 10
 
+An alternative to using iloc to subset a data frame is to use boolean expressions. For example, in the gapminder data frame, if you're only interested in data from the year 1952, you could use the == operator to isolate this data. In this case data is the whole gapminder dataframe and data_1952 is a new data frame that gets created containing only data from 1952. 
 
+```python
+data_1952 = data[data['year'] == 1952]
+```
+
+It's also possible to select specific columns by using data.columns[x:x] and setting the range to the columns of interest. For example, the following code would show only the country, continent, and year columns for the gapminder data frame.
+
+```python
+data[data.columns[0:3]]
+```
+The range can be changed to specify the desired columns and it can be saved as a new data frame by setting it equal to a variable name.
