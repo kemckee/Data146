@@ -27,7 +27,7 @@ The first line sets the path to the document and the second line saves the data 
 
 Notice that an additional argument is given to the function specifying the seperation of each peice of data. This is important because the default assumption is that the data is separated by commas. If this is not the case, it should be specified to facilitate smooth import. In this dataset the data is separated by tabs instead of commas, which is indicated by the sep = '\t'.
 
-To see an overview of the data frame, use the df.describe() function. This will summarize and provide statistics for each column of data. To see how many rows and columns there are, use df.shape. This will return the number of rows followed by the number of columns. The output for the gapminder data set is (1704, 6). To see the actual names of the columns use df.columns. The rows can also be referred to as items and the columns referred to as properties.
+To see an overview of the data frame, use the df.describe() function. This will summarize and provide statistics for each column of data. To see how many rows and columns there are, use df.shape. This will return the number of rows followed by the number of columns. The output for the gapminder data set is (1704, 6). To see the actual names of the columns use df.columns. The rows can also be referred to as observations and the columns referred to as variables.
 
 ## Question 3
 
@@ -69,20 +69,31 @@ The results are shown in the following table.
 
 ## Question 6
 
-The & symbol is a bit operator that sets bits to 1 only if both statements bits equal 1. For example, this expression will result in a new dataframe containing only values for which both country = Europe and year = 2007.
+The & symbol evaluates a to true if both statements on either side of the operator are true. For example, this expression will result in a new dataframe containing only values for which both country = Europe and year = 2007. It's important to note that both statements have to be in parentheses or it may evaluate to false even when both are true. I'm not entirely sure why this is but it seems like it could lead to unnecessary problems because it evaluates to false instead of raising an error.
 
 ```python
 data_europe = data[(data['continent'] == 'Europe') & (data['year'] == 2007)]
 ```
 
-This expression also illustrates the == operator. This operator is used to compare the equality of two items or values. In a boolean expression it will return true if the values are the same and false if they are not. In this case it returns all values in the dataframe for which the string in the continent column is equal to Europe and the value in the year column is equal to 2007. 
+It's important to note that both statements have to be in parentheses or it may evaluate to false even when both are true. I'm not entirely sure why this is but it seems like it could lead to unnecessary problems because it evaluates to false instead of raising an error. For example, the following line of code would evaluate to false even though both statements are true.
 
-The | operator will set bits to 1 if one or both of the statements's bits is 1. For example, the data frame below will contain all values from the gapminder data frame that either have a GDP per capita greater than or equal to 2000 or have Germany as the country listed. These values can overlap.
+```python
+1 < 3 & 4 > 2 
+```
+
+Tge data_europe expression above also illustrates the == operator. This operator is used to compare the equality of two items or values. It will return true if the values are the same and false if they are not. In this case it returns all values in the dataframe for which the string in the continent column is equal to Europe and the value in the year column is equal to 2007. To show this with a more simple example, the following line of code will evaluate to true because the two strings are identical.
+
+```python
+'potato' == 'potato'
+```
+
+The | operator will return true if one or both of the statements's is true. For example, the data frame below will contain all values from the gapminder data frame that either have a GDP per capita greater than or equal to 2000 or have Germany as the country listed. These values can overlap.
 
 ```python
 data_gdp = data[(data['gdpPercap'] >= 2000) | (data['country'] == 'Germany')]
 ```
-The ^ operator is similar to the | operator, but it sets bits to 1 only when one of the statements' bits is 1. If the ^ operator is switched into the example above, the data set would be the same except it would not include values for which both country = Germany and GDP per capita is greater than or equal to 2000.
+The ^ operator is similar to the | operator, but it evaluates to true only when one of the statements is true. If the | symbol in the expression above is replaced with the ^ operator, the data set would be the same except it would not include values for which both the country is Germany and GDP per capita is greater than or equal to 2000.
+
 
 ## Question 7
 
