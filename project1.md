@@ -117,8 +117,46 @@ display(data.iloc[:, 2:6])
 
 ## Question 8
 
-An API is a application programming interface. They are essentially remote desktops that relay information to and from your code and the provider/website that hosts your data of interest. The API delivers your request to the provider and then sends back their response to you.
+An API is a application programming interface. They are essentially remote servers that relay information to and from your code and the provider/website that hosts your data of interest. The API delivers your request to the provider and then sends back their response to you.
 
+Importing data from an API into your workspace requires a few simple steps. 
+
+1. Create a folder to store API data. 
+
+Use the os library to create a new folder in your work space.
+
+```python
+data_folder = 'data'
+if not os.path.exists(data_folder):
+    os.makedirs(data_folder)
+```
+
+2. Create a .csv file and get the path to this file. 
+
+Save the name of the new .csv file as an object and join this string to the data folder to get the path to the new .csv file in the folder created in the previous step. This file_name object should now contain the complete path to the .csv where the API data will be written.
+
+```python
+file_name = os.path.join(data_folder, file_name_short)
+```
+
+3. Write the contents of your API url into the .csv file. 
+
+Save the API link as an object and use the get method from the requests library to retrieve the data and write it to the .csv called file_name.
+
+```python
+url = "https://api.covidtracking.com/v1/states/daily.csv"
+r = requests.get(url)
+with open(file_name, 'wb') as f:
+    f.write(r.content)
+```
+    
+4. Convert the .csv data into a dataframe with pandas.
+
+Now that the data is written in a .csv in your work space, simply convert the data into a data frame using the pandas library.
+
+```python
+df = pd.read_csv(file_name)
+```
 
 ## Question 9
 
