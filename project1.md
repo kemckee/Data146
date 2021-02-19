@@ -164,13 +164,14 @@ Apply() is a pandas method that allows a function to be applied to all rows or a
 
 ## Question 10
 
-An alternative to using iloc to subset a data frame is to use boolean expressions. For example, in the gapminder data frame, if you're only interested in data from the year 1952, you could use the == operator to isolate this data. In this case data is the whole gapminder dataframe and data_1952 is a new data frame that gets created containing only data from 1952. 
+An alternative to using iloc to subset a data frame is to use set the columns equal to a subset of the existing columns. First save a list of the desired columns as an object. Next, set a new variable name equal to the dataframe with only those columns. This creates a new dataframe with only the columns listed in the cols list. It's a good idea to use df[cols].copy() rather than just using df[cols] because this prevents you from making undesired changes to the original data.
 
 ```python
-data_1952 = data[data['year'] == 1952]
+cols = ['col1', 'col2','col3', 'col4']
+df_filtered = df[cols].copy()
 ```
 
-It's also possible to select specific columns by using data.columns[x:x] and setting the range to the columns of interest. For example, the following code would show only the country, continent, and year columns for the gapminder data frame.
+It's also possible to select specific consecutive columns by using data.columns[x:x] and setting the range to the columns of interest. For example, the following code would show only the country, continent, and year columns for the gapminder data frame.
 
 ```python
 data[data.columns[0:3]]
