@@ -11,7 +11,7 @@ To illustrate these types of data imagine a dataset providing information about 
 
 The first plot uses alpha and beta of 5 with a sample of 10000 data points, which yields a relatively normal distribution with a mean of 0.49650898128794346 and a median of 0.4967548121582548.
 
-![](normaldist.png)
+![](normal.png)
 
 The second plot uses alpha of 0.5 and beta of 5 to produce a right skewed distribution. The mean is 0.08387259091317668 and the median is 0.040367671522080234.
 
