@@ -32,3 +32,15 @@ This plot shows the life expectancy data transformed to a logarithmic scale with
 ![](loglifeExp.png)
 
 The log10 plot is more helpful in this case because it more clearly shows the trend upward in life expectancy that occurred over time. The raw data plot still conveys this information but it is  less clear because of the overlap and similar height of the bars from 1952 and 2007.
+
+# Question 4
+
+The first plot shows the box and whiskers plot for population in each year of the gapminder data set using the raw data.
+
+![]()
+
+This plot shows the same information but with the population variable transformed using the np.log10() method.
+
+![]()
+
+The log10 plot communicates the information much better than the raw data plot because there are fewer outliers after the transformation so the scale makes the graph much more readable. 
