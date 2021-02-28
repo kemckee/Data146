@@ -10,17 +10,25 @@ To illustrate these types of data imagine a dataset providing information about 
 ## Question 2
 
 The first plot uses alpha and beta of 5 with a sample of 10000 data points, which yields a relatively normal distribution with a mean of 0.49650898128794346 and a median of 0.4967548121582548.
+
 ![](normal.png)
+
 The second plot uses alpha of 0.5 and beta of 5 to produce a right skewed distribution. The mean is 0.08387259091317668 and the median is 0.040367671522080234.
+
 ![](rightskew.png)
+
 The third plot uses alpha of 5 and beta of 0.5 to produce a left skewed distribution. The mean is 0.9117711226108247 and the median is 0.9540031869608877.
+
 ![](leftskew.png)
 
 # Question 3
 
 This first plot shows the change in life expectancy from 1952 to 2007 with the raw data. 
+
 ![](rawlifeExp.png)
+
 This plot shows the life expectancy data transformed to a logarithmic scale with base 10 using np.log10().
+
 ![](loglifeExp.png)
 
 The log10 plot is more helpful in this case because it more clearly shows the trend upward in life expectancy that occurred over time. The raw data plot still conveys this information but it is  less clear because of the overlap and similar height of the bars from 1952 and 2007.
