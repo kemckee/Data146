@@ -11,3 +11,5 @@ To illustrate these types of data imagine a dataset providing information about 
 
 The first plot uses alpha and beta of 5 with a sample of 10000 data points, which yields a relatively normal distribution with a mean of 0.49650898128794346 and a median of 0.4967548121582548.
 
+![](normaldist.png)
+
