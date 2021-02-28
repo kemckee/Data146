@@ -37,10 +37,10 @@ The log10 plot is more helpful in this case because it more clearly shows the tr
 
 The first plot shows the box and whiskers plot for population in each year of the gapminder data set using the raw data.
 
-![]()
+![](rawPop.png)
 
 This plot shows the same information but with the population variable transformed using the np.log10() method.
 
-![]()
+![](logPop.png)
 
 The log10 plot communicates the information much better than the raw data plot because there are fewer outliers after the transformation so the scale makes the graph much more readable. 
