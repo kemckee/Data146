@@ -13,11 +13,11 @@ The first plot uses alpha and beta of 5 with a sample of 10000 data points, whic
 
 ![](normal.png)
 
-The second plot uses alpha of 0.5 and beta of 5 to produce a right skewed distribution. The mean is 0.08387259091317668 and the median is 0.040367671522080234.
+The second plot uses alpha of 0.5 and beta of 5 to produce a right skewed distribution. The mean is 0.08387259091317668 and the median is 0.040367671522080234. The mean is more easily influenced by outliers, which explains why it is greater than the median for a skewed right distribution.
 
 ![](rightskew.png)
 
-The third plot uses alpha of 5 and beta of 0.5 to produce a left skewed distribution. The mean is 0.9117711226108247 and the median is 0.9540031869608877.
+The third plot uses alpha of 5 and beta of 0.5 to produce a left skewed distribution. The mean is 0.9117711226108247 and the median is 0.9540031869608877. The mean is more easily influenced by outliers, which explains why it is smaller than the median for a skewed left distribution.
 
 ![](leftskew.png)
 
@@ -27,11 +27,11 @@ This first plot shows the change in life expectancy from 1952 to 2007 with the r
 
 ![](rawlifeExp.png)
 
-This plot shows the life expectancy data transformed to a logarithmic scale with base 10 using np.log10().
+This plot shows the life expectancy data transformed to a logarithmic scale with base 10 using np.log10(). 
 
 ![](loglifeExp.png)
 
-The log10 plot is more helpful in this case because it more clearly shows the trend upward in life expectancy that occurred over time. The raw data plot still conveys this information but it is  less clear because of the overlap and similar height of the bars from 1952 and 2007.
+The log10 plot is more helpful in this case because it more clearly shows the trend upward in life expectancy that occurred over time. The raw data plot still conveys this information but it is  less clear because of the overlap and similar height of the bars from 1952 and 2007. The benefit of using logarithms is they can scale data on a graph such that vast discrepancies are closer together in space, which makes plots much more readable. There isn't a huge difference in the range of values for life expectancies so although I do believe the log plot is more clear, logarithms are more useful for looking at data that spans a wider range. This is illustrated in the difference between the raw and logarithmic population box and whiskers plots in question 4. The value of logarithms is shown more clearly when the smallest and greatest values differ by orders of magnitude rather than tens or hundreds. 
 
 # Question 4
 
