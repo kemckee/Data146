@@ -22,5 +22,8 @@ Next I added zip code as another feature to test if this would improve the predi
 
 ____________________________________________________________________
 |         | Linear Regression | Standardization | Ridge Regression |
-| Training R Squared | 0.333 |      |  |  |
-|Testing R squared | 
+-------------------------------------------------------------------
+| Training R Squared | 0.333 |                |                 |  
+--------------------------------------------------------------------
+|Testing R squared |  0.208 |    |    |
+--------------------------------------------------------------------
