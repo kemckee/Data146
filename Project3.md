@@ -11,3 +11,16 @@ The next step toward improving this model was standardizing the features. I used
 ## Question 3
 
 Next I used a ridge regression model to fit the data. I used an alph arange of 0 to 100, which yielded an optimal alpha level of 100. The alpha value is meant to reduce the cost function by adding a regularization term, which should reduce model complexity and prevent overfitting. I still got very small values for training and testing scores, 0.019 and -0.036 respectively. This indicates a poorly fit model and not much improvement from the other two methods. I looked at the graphs for #of folds and R squared, which showed that this method does produce more consistent testing scores compared to the other two methods but the model still doesn't seem to have much predictive value.
+
+# Question 4
+
+I repeated the previous steps with the Charleston selling price data. For the linear regression model I got a training score of 0.004 and a testing score of -0.015. After standardizing the data with sklearn StandardScaler(), I got a training score of 0.004 and a testing score of -0.019. With the last technique of using the ridge regression, the training score was still only 0.004 and the test score was -0.055. These values don't show much improvement from one technique to the next. The scores are all very low, which indicates they aren't explainign a lot of the variance in the data. This could be because asking and actual selling price both vary by arbitrary factors like zipe code, which is accounted for below.
+
+# Question 5
+
+Next I added zip code as another feature to test if this would improve the predictive power of the model. This yielded much better results for all three trials. The results for each trial are shown below.
+
+____________________________________________________________________
+|         | Linear Regression | Standardization | Ridge Regression |
+| Training R Squared | 0.333 |      |  |  |
+|Testing R squared | 
