@@ -20,10 +20,9 @@ I repeated the previous steps with the Charleston selling price data. For the li
 
 Next I added zip code as another feature to test if this would improve the predictive power of the model. This yielded much better results for all three trials. The results for each trial are shown below.
 
-| ________________________________________________________________ |
 |         | Linear Regression | Standardization | Ridge Regression |
 | ---------------------------------------------------------------- |
-| Training R Squared | 0.333 |                |                    |  
+| Training| 0.333             |                 |                  |  
 | ---------------------------------------------------------------- | 
-| Testing R squared |  0.208 |    |                                |
+| Testing |  0.208 |    |                                |
 |----------------------------------------------------------------- |
