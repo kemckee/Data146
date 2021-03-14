@@ -20,17 +20,17 @@ I repeated the previous steps with the Charleston selling price data. For the li
 
 Next I added zip code as another feature to test if this would improve the predictive power of the model. This yielded much better results for all three trials, likely because homes of similar size can vary greatly depending on their location/neighborhood. The results for each trial are shown below.
 
-Linear Regression 
-Training R squared: 0.333
-Testing R squared: 0.208
+Linear Regression  
+Training R squared: 0.333  
+Testing R squared: 0.208  
 
-Standardization
-Training R squared: 0.335
-Testing R squared: 0.302
+Standardization  
+Training R squared: 0.335  
+Testing R squared: 0.302  
 
-Ridge Regression
-Training R squared: 0.333
-Testing R squared: 0.219
+Ridge Regression  
+Training R squared: 0.333  
+Testing R squared: 0.219  
 
 The standardization method had the highest training and testing scores in this case, accounting for a little over 30% of the variance in the data in both training and testing. This still isn't ideal but definitely a big improvement from the previous attempts that don't take zip code into account.
 
