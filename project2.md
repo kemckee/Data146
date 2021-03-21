@@ -17,9 +17,9 @@ The second plot uses alpha of 0.5 and beta of 2 to produce a right skewed distri
 
 ![](right_skew.png)
 
-The third plot uses alpha of 5 and beta of 0.5 to produce a left skewed distribution. The mean is 0.9117711226108247 and the median is 0.9540031869608877. The mean is more easily influenced by outliers, which explains why it is smaller than the median for a skewed left distribution.
+The third plot uses alpha of 2 and beta of 0.75 to produce a left skewed distribution. The mean is 0.7202750662293163 and the median is 0.7762763657189237. The mean is more easily influenced by outliers, which explains why it is smaller than the median for a skewed left distribution.
 
-![](leftskew.png)
+![](left_skew.png)
 
 # Question 3
 
