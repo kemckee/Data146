@@ -11,11 +11,11 @@ To illustrate these types of data imagine a dataset providing information about 
 
 The first plot uses alpha and beta of 5 with a sample of 10000 data points, which yields a relatively normal distribution with a mean of 0.4995770839499861 and a median of 0.5030168812134036.
 
-![](normal.png)
+![](normal_.png)
 
 The second plot uses alpha of 0.5 and beta of 2 to produce a right skewed distribution. The mean is 0.20507526624882796 and the median is 0.12508862540626092. The mean is more easily influenced by outliers, which explains why it is greater than the median for a skewed right distribution.
 
-![](rightskew.png)
+![](right_skew.png)
 
 The third plot uses alpha of 5 and beta of 0.5 to produce a left skewed distribution. The mean is 0.9117711226108247 and the median is 0.9540031869608877. The mean is more easily influenced by outliers, which explains why it is smaller than the median for a skewed left distribution.
 
