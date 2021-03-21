@@ -43,4 +43,4 @@ This plot shows the same information but with the population variable transforme
 
 ![](logPop.png)
 
-The log10 plot communicates the information much better than the raw data plot because the values are closer together so the outliers don't skew the scale as much. The transformation makes the plot much more readable and allows for better comparison between years. Because the boxes in the raw data plot are so small it's difficult to see the trend of increasing population over time that is evident in the log plot.
+The log10 plot communicates the information much better than the raw data plot because the values are closer together so the outliers don't skew the scale as much. The transformation makes the plot much more readable and allows for better comparison between years. Because the boxes in the raw data plot are so small it's difficult to see the trend of increasing population over time that is evident in the log plot. 
