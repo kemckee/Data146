@@ -9,3 +9,7 @@
 [Project 2](https://kemckee.github.io/Data146/project2.html)
 
 [Project 3](https://kemckee.github.io/Data146/Project3.html)
+
+## Midterm Links
+
+[Slice of Data Science Reflection](https://kemckee.github.io/Data146/sliceofdata.html)
