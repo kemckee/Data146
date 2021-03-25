@@ -11,11 +11,10 @@ For question 18 I rewrote my script and got a mean R squared value of 0.60198. O
 For this question I again believe I was still using the MedInc subset because my answer was around 0.47. I recalculated this value using the entire dataset and got a mean R squared value of 0.60201. I was also getting the same value for ridge regression as I did for linear regression and I believe this is because I forgot to change the (initially empty) arrays from the linear regression run to the ridge regression run. I created the arrays in the DoKFold function that looked like this:
 
 ```python
-
-    train_scores = []
-    test_scores = []
-    train_mse = []
-    test_mse = []
+train_scores = []
+test_scores = []
+train_mse = []
+test_mse = []
  ```
 And I used these same array names when creating the ridge regression rather than creating new arrays to hold the ridge data. I corrected this problem and introduced 4 new arrays:
  
