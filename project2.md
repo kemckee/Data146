@@ -25,7 +25,7 @@ The third plot uses alpha of 2 and beta of 0.75 to produce a left skewed distrib
 
 This first plot shows the change in life expectancy from 1952 to 2007 with the raw data. 
 
-![](rawlifeExp.png)
+![](FIXEDBAR.png)
 
 This plot shows the life expectancy data transformed to a logarithmic scale with base 10 using np.log10(). 
 
