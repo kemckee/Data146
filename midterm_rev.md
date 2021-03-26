@@ -52,6 +52,12 @@ For some reason I tried to use the DoKFold function instead of just fitting the 
 
 ## Question 24
 
-I ran into a similar problem here as I did in question 19 because I wasn't totally sure how to get the value for alpha. I think I was trying to use the average values of alpha rather than finding the optimal one. Graphing the plot of MSE vs alpha really helped clarify where the optimal alpha was an dusing the method shown in 19 but replacing ridge with lasso regression yielded a result of 0.00300.
+I ran into a similar problem here as I did in question 19 because I wasn't totally sure how to get the value for alpha. I found a problem in my DoKFold function that was producing really really small values for average MSE, so I fixed that problem by replacing the original statement I used to append the MSE with the following code:
+
+```python
+train_mse.append(np.square(np.subtract(ytrain, ytrain_pred)).mean())
+test_mse.append(np.square(np.subtract(ytest, ytest_pred)).mean())
+```
+This makes all of the operations very clear to me, which helped remedy the error I was getting in the function that I beleive was due to a problem with order of operations. The values were being squared and averaged in the wrong order because of some missed parentheses.  
 
 ## Revised Script: 
