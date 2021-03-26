@@ -48,7 +48,7 @@ This yielded coefficients of 0.82961930428045, 0.8288892465528181, and 0.8200140
 
 ## Question 23
 
-For some reason I tried to use the DoKFold function instead of just fitting the models using model.coef_[], which yielded values that were very similar to one another but lasso was the lowest. I answered that two or more were the same because I wasn't sure how much to round. I cleaned up the code for this question and it is posted in the file below.
+For this question I still wasn't entirely sure how to get the index for alpha and because I had a problem in my DoKFold function regarding the MSE append statements (described in Q24 revision), I got an ideal alpha of 20. After fixing these append statements my MSE values match those on the answer sheet and I got an ideal alpha level of 26.1, which is different from the value using R squared of 25.8.
 
 ## Question 24
 
@@ -58,6 +58,6 @@ I ran into a similar problem here as I did in question 19 because I wasn't total
 train_mse.append(np.square(np.subtract(ytrain, ytrain_pred)).mean())
 test_mse.append(np.square(np.subtract(ytest, ytest_pred)).mean())
 ```
-This makes all of the operations very clear to me, which helped remedy the error I was getting in the function that I beleive was due to a problem with order of operations. The values were being squared and averaged in the wrong order because of some missed parentheses.  
+This makes all of the operations very clear to me, which helped remedy the error I was getting in the function that I beleive was due to a problem with order of operations. The values were being squared and averaged in the wrong order because of some missed parentheses. This yielded an ideal alpha value of 0.00186, which is the same as the value using R squared.  
 
 ## Revised Script: 
