@@ -13,3 +13,5 @@
 ## Midterm Links
 
 [Slice of Data Science Reflection](https://kemckee.github.io/Data146/sliceofdata.html)
+
+[Midterm Revisions](https://kemckee.github.io/Data146/midterm_rev.html)
