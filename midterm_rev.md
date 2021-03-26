@@ -48,3 +48,10 @@ This yielded coefficients of 0.82961930428045, 0.8288892465528181, and 0.8200140
 
 ## Question 23
 
+For some reason I tried to use the DoKFold function instead of just fitting the models using model.coef_[], which yielded values that were very similar to one another but lasso was the lowest. I answered that two or more were the same because I wasn't sure how much to round. I cleaned up the code for this question and it is posted in the file below.
+
+## Question 24
+
+I ran into a similar problem here as I did in question 19 because I wasn't totally sure how to get the value for alpha. I think I was trying to use the average values of alpha rather than finding the optimal one. Graphing the plot of MSE vs alpha really helped clarify where the optimal alpha was an dusing the method shown in 19 but replacing ridge with lasso regression yielded a result of 0.00300.
+
+## Revised Script: 
