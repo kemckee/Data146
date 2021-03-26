@@ -46,3 +46,5 @@ lin.coef_[0], rid.coef_[0], las.coef_[0]
 ```
 This yielded coefficients of 0.82961930428045, 0.8288892465528181, and 0.8200140807502059 for the linear, ridge, and lasso regressions respectively. Based on this analysis the Lasso regression estimates the smallest coefficient for MedInc.
 
+## Question 23
+
