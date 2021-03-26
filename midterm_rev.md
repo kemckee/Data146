@@ -60,5 +60,5 @@ test_mse.append(np.square(np.subtract(ytest, ytest_pred)).mean())
 ```
 This makes all of the operations very clear to me, which helped remedy the error I was getting in the function that I beleive was due to a problem with order of operations. The values were being squared and averaged in the wrong order because of some missed parentheses. This yielded an ideal alpha value of 0.00186, which is the same as the value using R squared.  
 
-## Revised Script: [Revised Midterm Code](https://kemckee.github.io/Data146/midterm_corrections.html)
+## Click [here](https://kemckee.github.io/Data146/midterm_corrections.py) for the revised code.
 
