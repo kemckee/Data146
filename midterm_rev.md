@@ -24,5 +24,17 @@ rid_te = []
 rid_tr_mse = []
 rid_te_mse = []
 ```
-I then appended the ridge training, testing, and MSE data to the appropriate array and took the mean of these values to arrive at the R squared value. The combination of creating these new arrays and using the whole dataset rather than just the MedInc data corrected this problem.
+I then appended the ridge training, testing, and MSE data to the appropriate array and took the mean of these values to arrive at the R squared value. The combination of creating these new arrays and using the whole dataset rather than just the MedInc data corrected this problem. I also wasn't totally sure on how to get the alpha value itself, so I fixed that by using the argmax value for all of the values tested in the alpha range given in the question, which yielded an ideal alpha of 25.8 (the first value in the print line below).
 
+```python
+idx = np.argmax(rid_te)
+print(rid_a_range[idx], rid_tr[idx], rid_te[idx], rid_tr_mse[idx], rid_te_mse[idx])
+```
+
+## Question 20
+
+For the lasso regression I made different empty arrays, but I was still using the MedInc data because of an issue with different X variables all over the place. I fixed this by including the whole dataset, which yielded a mean R squared value of 0.60213 for the lasso regression. I also believe I had some issues getting the exact right value for alpha, which I corrected similarly to question 19 by using np.argmax to find the index of alpha. Plotting the graph this time also helped me see where the maximum value of R squared was so I could confirm the correct alpha.
+
+## Question 22
+
+For this question I was mostly confused about how much we should round our answers to determine if they're the same or different. The value that is most correlated is MedInc, so I repeated these calculations only using the MedInc variable. 
