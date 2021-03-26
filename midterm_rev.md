@@ -37,4 +37,12 @@ For the lasso regression I made different empty arrays, but I was still using th
 
 ## Question 22
 
-For this question I was mostly confused about how much we should round our answers to determine if they're the same or different. The value that is most correlated is MedInc, so I repeated these calculations only using the MedInc variable. 
+I used the DoKFold values rather than looking at a simple standardized and fit model for each type of regression. I thought this question was a lot harder than it really is and again there seemed to be soem mixed up X vs X_var variables in there that were messing up these values. I used the following code to first set the alphas to those determined in previous questions and define the regression functions as objects. I then fit each model using the standardized X values (Xs) and got the coefficient for each type of regression for only the MedInc variable (which is the most correlated) using index 0 because it is the first feature in the dataframe. 
+
+```python
+lin = LR(); rid = Ridge(alpha = 25.8); las = Lasso(alpha = 0.00186)
+lin.fit(Xs,y); rid.fit(Xs,y); las.fit(Xs,y)
+lin.coef_[0], rid.coef_[0], las.coef_[0]
+```
+This yielded coefficients of 0.82961930428045, 0.8288892465528181, and 0.8200140807502059 for the linear, ridge, and lasso regressions respectively. Based on this analysis the Lasso regression estimates the smallest coefficient for MedInc.
+
