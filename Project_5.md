@@ -47,5 +47,5 @@ Lasso Regression (WealthC shown in blue, WealthI shown in red)
 
 ![](new_WealthC_Lasso.png) ![](WealthI_Lasso.png)
 
-The best results for the testing data came from the ridge regression for WealthI, but this was extremely close to the lasso regression for WealthI. THe ridge regression also yielded the best results for the WealthC data, so it seems like this is the best type of regression for these wealth variables in this dataset.
+The best results for the testing data came from the ridge regression for WealthI, but this was extremely close to the lasso regression for WealthI. The ridge regression also yielded the best results for the WealthC data, so it seems like this is the best type of regression for these two wealth variables in this dataset.
 
