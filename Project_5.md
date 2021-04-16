@@ -36,6 +36,7 @@ Overall, the R squared values for WealthI were much higher than those for Wealth
 
 Ridge Regression (WealthC shown in blue, WealthI shown in red)
 
+![](WealthC_Ridge.png) ![](WealthI_Ridge.png)
 
 
 Lasso Regression (WealthC shown in blue, WealthI shown in red)
