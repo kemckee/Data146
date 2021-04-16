@@ -8,7 +8,7 @@ The first test I ran was a linear regression, which yielded training and testing
 
 Next I ran a ridge and lasso regression on this data. I ran into a problem with my ridge regression that caused it to set the optimal alpha as whatever the highest value in the alpha range was and after graphing the alpha range against R sqaured, it appeared that the corresponding R sqaured value was the same (or very close) for every value of alph abetween 20 and 120. This problem seemed to be caused by a problem with the KFold function. After the KFold was fixed I ran it again using a range of 65 to 70 and I got an optimal alpha level of 68.15789473684211, a training R sqaured of 0.7358357835197123, and a testing R sqaured of 0.7351780962057564. This shows a slight immprovement from the linear regression but only at the 4th decimal place.
 
-For the lasso regression I started with an alpha range of 0.0001 to 0.0003 and ended up narrowing this down to a range from 0.00025 to 0.00028 after a few tests. This yielded an optimal alpha of 0.00026333333333333336 and training and testing R squared values of 0.7358346356402806 and 0.7350562589633233 respectively. These values are extremely close to the ridge regression R squared values. 
+For the lasso regression I started with an alpha range of 0.0001 to 0.0003 and ended up narrowing this down to a range from 0.00025 to 0.00028 after a few tests. This yielded an optimal alpha of 0.0002588888888888889 and training and testing R squared values of 0.7358346356402806 and 0.7350562589633233 respectively. These values are extremely close to the ridge regression R squared values. 
 
 ## WealthI Analysis
 
@@ -45,7 +45,7 @@ Ridge Regression (WealthC shown in blue, WealthI shown in red)
 
 Lasso Regression (WealthC shown in blue, WealthI shown in red)
 
-![](WealthC_Lasso.png) ![](WealthI_Lasso.png)
+![](new_WealthC_Lasso.png) ![](WealthI_Lasso.png)
 
 The best results for the testing data came from the ridge regression for WealthI, but this was extremely close to the lasso regression for WealthI. THe ridge regression also yielded the best results for the WealthC data, so it seems like this is the best type of regression for these wealth variables in this dataset.
 
