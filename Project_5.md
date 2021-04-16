@@ -12,7 +12,7 @@ For the lasso regression I started with an alpha range of 0.0001 to 0.0003 and e
 
 ## WealthI Analysis
 
-Next I repeated all of the previous steps with WealthI as the target instead of WealthC. I got much better R squared values (about 0.82) for these tests but I also found the MSE was huge (in the billions) so I'm not sure what went wrong with that measure. The process was pretty much the same as before so I'm not going into as much depth but the results for each test are reported below. For the ridge regression I ended up using a range of ALPHA RANGE and for the lasso regressio I used a range of 0.8 to 1.2. The lasso regression raised a convergence error as it did for the WealthC trial and it took about 10 minutes to run but it eventually yielded the values listed below.
+Next I repeated all of the previous steps with WealthI as the target instead of WealthC. I got much better R squared values (about 0.82) for these tests but I also found the MSE was huge (in the billions) so I'm not sure what went wrong with that measure. The process was pretty much the same as before so I'm not going into as much depth but the results for each test are reported below. For the ridge regression I ended up using a range of ALPHA RANGE and for the lasso regressio I used a range of 1.2 to 2. The lasso regression raised a convergence error as it did for the WealthC trial and it took about 10 minutes to run but it eventually yielded the values listed below.
 
 Linear regression   
 Training R squared: 0.8258291258594239  
@@ -26,6 +26,6 @@ optimal alpha: ALPHA
 Lasso regression  
 Training R squared: 0.8258372542786979  
 Testing R squared: 0.82501982545465  
-optimal alpha: ALPHA  
+optimal alpha: 1.733  
 
 As before, the values are very similar to one another but the lasso and ridge regressions are slightly better than the linear regression.
