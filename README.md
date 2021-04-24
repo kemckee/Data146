@@ -7,10 +7,12 @@
 [Project 1](https://kemckee.github.io/Data146/project1.html)
 
 [Project 2](https://kemckee.github.io/Data146/project2.html)
-
+Cancel changes
 [Project 3](https://kemckee.github.io/Data146/Project3.html)
 
 [Project 5.1](https://kemckee.github.io/Data146/Project_5.html)
+
+[Project 5.2](https://kemckee.github.io/Data146/Project_5_2.html)
 
 ## Midterm Links
 
