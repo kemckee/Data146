@@ -27,3 +27,7 @@ Scaled data training and testing values:
 5000 trees: [0.7981770833333334, 0.5080527086383602]  
 
 The scaled data produced slightly higher training and testing results, with the 5000 tree run producing the highest scores.
+
+I also found that the minimum number of splits for the random forest was 28. 
+
+
