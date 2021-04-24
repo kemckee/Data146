@@ -14,16 +14,16 @@ Next I implemented a logistic regression using WealthC as the target to see how 
 
 Next I used a random forest with 100, 500, 1000, and 5000 estimators using both the raw and scaled data.
 
-Raw data training and testing values:
-100 trees: [0.7890625, 0.5012201073694486]
-500 trees: [0.7890625, 0.509028794533919]
-1000 trees: [0.7890625, 0.49829184968277207]
-5000 trees: [0.7890625, 0.5046364080039043]
+Raw data training and testing values:  
+100 trees: [0.7890625, 0.5012201073694486]  
+500 trees: [0.7890625, 0.509028794533919]  
+1000 trees: [0.7890625, 0.49829184968277207]  
+5000 trees: [0.7890625, 0.5046364080039043]  
 
-Scaled data training and testing values:
-100 trees: [0.7981770833333334, 0.4992679355783309]
-500 trees: [0.7981770833333334, 0.5031722791605662]
-1000 trees: [0.7981770833333334, 0.5065885797950219]
-5000 trees: [0.7981770833333334, 0.5080527086383602]
+Scaled data training and testing values:  
+100 trees: [0.7981770833333334, 0.4992679355783309]  
+500 trees: [0.7981770833333334, 0.5031722791605662]  
+1000 trees: [0.7981770833333334, 0.5065885797950219]  
+5000 trees: [0.7981770833333334, 0.5080527086383602]  
 
 The scaled data produced slightly higher training and testing results, with the 5000 tree run producing the highest scores.
