@@ -12,7 +12,7 @@
 
 [Project 5.1](https://kemckee.github.io/Data146/Project_5.html)
 
-[Project 5.2](https://kemckee.github.io/Data146/Project_5_2.html)
+[Project 5.2](https://kemckee.github.io/Data146/project_5_2.html)
 
 ## Midterm Links
 
