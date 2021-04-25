@@ -30,4 +30,26 @@ The scaled data produced slightly higher training and testing results, with the 
 
 I also found that the minimum number of splits for the random forest was 28. 
 
+## Question 4
 
+I then repeated all of the previous tests with 2 and 3 as a single outcome (all 3s were turned into 4s). 
+
+Without weights the best k was 75 and this produced testing and training scores of 0.6144460712542704 and 0.6279296875, respectively.
+After weighting distance the best k was 79, which yielded testing and training scores of 0.5895558809175208 and 0.8326822916666666.
+
+The logistic regression model produced training and testing scores of 0.6002604166666666 and 0.6120058565153733, which is better than the weighted KNN but worse than the unweighted KNN.
+
+The raw decision tree results are shown below [train,test]:
+100 trees: [0.8333333333333334, 0.5846754514397267]  
+500 trees: [0.8333333333333334, 0.5710102489019033]  
+1000 trees: [0.8333333333333334, 0.5714982918496828]  
+5000 trees: [0.8333333333333334, 0.5758906783796974]  
+
+Standardized tree results:
+
+100 trees: [0.8333333333333334, 0.5871156661786238]
+500 trees: [0.8333333333333334, 0.5812591508052709]
+1000 trees: [0.8333333333333334, 0.582723279648609]
+5000 trees: [0.8333333333333334, 0.5856515373352855]
+
+These testing scores are actually a big improvement from the first decision tree model. 
