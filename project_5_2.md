@@ -51,4 +51,16 @@ Standardized tree results:
 1000 trees: [0.8333333333333334, 0.582723279648609]  
 5000 trees: [0.8333333333333334, 0.5856515373352855]  
 
-These testing scores are actually a big improvement from the first decision tree model. 
+These testing scores are actually a big improvement from the first decision tree model. Overall the merging of classes 2 and 3 improved the model which could be due to decreased variance among the wealth classes that resulted in better predictive power of the model.
+
+## Results 
+
+The logistic regression produced the best results in both cases of merged and unmerged data. The merging of classes 2 and 3 improved the model to produce a testing score of about 0.6, which indicates a moderate relationship between these variables.
+
+### Before merging 2 and 3
+
+Unstandardized K value vs testing score for KNN
+
+Standardized K value vs testing score for KNN
+
+### After merging 2 and 3
