@@ -14,18 +14,18 @@ Next I implemented a logistic regression using WealthC as the target to see how 
 
 Next I used a random forest with 100, 500, 1000, and 5000 estimators using both the raw and scaled data.
 
-Raw data training and testing values:  
+Raw data training and testing values:    
 100 trees: [0.7890625, 0.5012201073694486]  
 500 trees: [0.7890625, 0.509028794533919]  
 1000 trees: [0.7890625, 0.49829184968277207]  
 5000 trees: [0.7890625, 0.5046364080039043]  
 
-Scaled data training and testing values:  
-100 trees: [0.7981770833333334, 0.4992679355783309]  
-500 trees: [0.7981770833333334, 0.5031722791605662]  
-1000 trees: [0.7981770833333334, 0.5065885797950219]  
-5000 trees: [0.7981770833333334, 0.5080527086383602]  
-
+Scaled data training and testing values:    
+100 trees: [0.7981770833333334, 0.4992679355783309]    
+500 trees: [0.7981770833333334, 0.5031722791605662]    
+1000 trees: [0.7981770833333334, 0.5065885797950219]    
+5000 trees: [0.7981770833333334, 0.5080527086383602]    
+ 
 The scaled data produced slightly higher training and testing results, with the 5000 tree run producing the highest scores.
 
 I also found that the minimum number of splits for the random forest was 28. 
@@ -39,17 +39,16 @@ After weighting distance the best k was 79, which yielded testing and training s
 
 The logistic regression model produced training and testing scores of 0.6002604166666666 and 0.6120058565153733, which is better than the weighted KNN but worse than the unweighted KNN.
 
-The raw decision tree results are shown below [train,test]:
-100 trees: [0.8333333333333334, 0.5846754514397267]  
-500 trees: [0.8333333333333334, 0.5710102489019033]  
-1000 trees: [0.8333333333333334, 0.5714982918496828]  
-5000 trees: [0.8333333333333334, 0.5758906783796974]  
+The raw decision tree results are shown below [train,test]:  
+100 trees: [0.8333333333333334, 0.5846754514397267]    
+500 trees: [0.8333333333333334, 0.5710102489019033]    
+1000 trees: [0.8333333333333334, 0.5714982918496828]    
+5000 trees: [0.8333333333333334, 0.5758906783796974]    
 
-Standardized tree results:
-
-100 trees: [0.8333333333333334, 0.5871156661786238]
-500 trees: [0.8333333333333334, 0.5812591508052709]
-1000 trees: [0.8333333333333334, 0.582723279648609]
-5000 trees: [0.8333333333333334, 0.5856515373352855]
+Standardized tree results:  
+100 trees: [0.8333333333333334, 0.5871156661786238]  
+500 trees: [0.8333333333333334, 0.5812591508052709]  
+1000 trees: [0.8333333333333334, 0.582723279648609]  
+5000 trees: [0.8333333333333334, 0.5856515373352855]  
 
 These testing scores are actually a big improvement from the first decision tree model. 
