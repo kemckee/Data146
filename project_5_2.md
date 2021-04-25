@@ -61,6 +61,18 @@ The logistic regression produced the best results in both cases of merged and un
 
 Unstandardized K value vs testing score for KNN
 
+![](unstandardized_no_merge.png)
+
 Standardized K value vs testing score for KNN
 
+![](standardized_no_merge.png)
+
 ### After merging 2 and 3
+
+Unstandardized K value vs testing score for KNN
+
+![](unstandardized_merge.png)
+
+Standardized K value vs testing score for KNN
+
+![](standardized_merge.png)
